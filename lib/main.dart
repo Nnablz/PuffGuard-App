@@ -62,7 +62,7 @@ class IotProvider extends ChangeNotifier {
   String get fanStatus => _fanStatus;
   bool _hasNotifiedForCurrentEvent = false;
   static const int dangerThreshold = 1000;
-  final String _wsUrl = 'ws:
+  final String _wsUrl = 'ws://192.168.4.1:81';
   IotProvider() {
     _connectWebSocket();
   }
