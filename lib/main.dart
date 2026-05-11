@@ -19,7 +19,7 @@ void main() async {
   await flutterLocalNotificationsPlugin.initialize(
     settings: initializationSettings,
     onDidReceiveNotificationResponse: (NotificationResponse response) {
-      // No action needed for now
+      
     },
   );
   runApp(
@@ -62,7 +62,7 @@ class IotProvider extends ChangeNotifier {
   String get fanStatus => _fanStatus;
   bool _hasNotifiedForCurrentEvent = false;
   static const int dangerThreshold = 1000;
-  final String _wsUrl = 'ws://192.168.4.1:81';
+  final String _wsUrl = 'ws:
   IotProvider() {
     _connectWebSocket();
   }
